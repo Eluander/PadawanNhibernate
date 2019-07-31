@@ -17,7 +17,7 @@ Install-Package FluentMigrator.Tools
 Em produção , para melhor performace, usa-se :
 ### new SchemaUpdate(cfg).Execute(false, false);
 
-```
+```csharp
 var config = Fluently.Configure()
                 .Database(MsSqlConfiguration.MsSql2012.ConnectionString(AppSettings.ConnectionString))
                 .Mappings(m => m.FluentMappings.AddFromAssembly(Assembly.GetExecutingAssembly()))
